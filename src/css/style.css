@@ -1,0 +1,76 @@
+.btn {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container header {
+  background-color: gray;
+  height: 50px;
+}
+
+.container main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container main > section {
+  height: calc(100vh - 50px);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container main > section:first-child {
+  background-color: #004000;
+  min-width: 300px;
+}
+
+.container main > section:first-child > .btnClose {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.container main > section:last-child {
+  min-width: 40vw;
+  background-color: #00006e;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container main > div.border {
+  width: 10px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: visible;
+}
+
+.container main > div.border > div {
+  background-color: darkred;
+  color: white;
+  width: 20px;
+  cursor: col-resize;
+}
+/*# sourceMappingURL=style.css.map */

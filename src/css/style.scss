@@ -1,0 +1,52 @@
+.btn {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.container {
+    overflow: hidden;
+    header {
+        background-color: gray;
+        height: 50px;
+    }
+
+    main {
+        display: flex;
+        > section {
+            height: calc(100vh - 50px);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        > section:first-child {
+            background-color: rgb(0, 64, 0);
+            min-width: 300px;
+            > .btnClose {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+        }
+        > section:last-child {
+            min-width: 40vw;
+            background-color: rgb(0, 0, 110);
+            flex-grow: 1;
+        }
+        > div.border {
+            width: 10px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: visible;
+            > div {
+                background-color: darkred;
+                color: white;
+                width: 20px;
+                cursor: col-resize;
+            }
+        }
+    }
+}
